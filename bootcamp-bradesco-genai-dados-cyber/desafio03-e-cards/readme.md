@@ -58,7 +58,7 @@ erDiagram
   - Cria as tabelas `tbl_collections`, `tbl_types`, `tbl_stages` e `tbl_cards` com relacionamentos de Chaves Estrangeiras (`FK`).
   - Inclui restrições de integridade e índices para otimização de consultas.
 - **Seeds Iniciais:** [db_scripts/seeds/001_seeds_cards.sql](file:///d:/WebApps_Programas_Scripts/dio-bootcamps/bootcamp-bradesco-genai-dados-cyber/desafio03-e-cards/db_scripts/seeds/001_seeds_cards.sql)
-  - Carga de dados iniciais para tipos de Pokémon, estágios (Basic, Stage 1, VMAX, etc.), uma coleção modelo e uma carta de exemplo.
+  - Carga de dados inicial e idempotente para todas as tabelas: 11 tipos de Pokémon, 10 estágios, 7 coleções icônicas e mais de 20 cartas representativas (clássicas e modernas).
 
 ---
 

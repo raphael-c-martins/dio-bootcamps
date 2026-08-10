@@ -15,3 +15,14 @@
   - Criação de índices de busca (`idx_cards_collection_id`, `idx_cards_type_id`, `idx_cards_stage_id`, `idx_cards_name`).
 - **Massas de Teste (Seeds):** Criado o script `db_scripts/seeds/001_seeds_cards.sql` contendo os 11 tipos padrão de Pokémon, 10 estágios de evolução, coleção modelo (Base Set) e a carta de exemplo do Pikachu.
 - **Documentação Técnica:** Atualizado o `readme.md` com instruções de execução e diagrama Entidade-Relacionamento (ER) em formato Mermaid.
+
+---
+
+## 🚀 [2026-08-10] - Carga Inicial Completa de Seeds para Pokémon TCG
+
+### 📌 Descrição das Alterações
+- **Expansão de Seeds para Todas as Tabelas:** Atualizado o arquivo [db_scripts/seeds/001_seeds_cards.sql](file:///d:/WebApps_Programas_Scripts/dio-bootcamps/bootcamp-bradesco-genai-dados-cyber/desafio03-e-cards/db_scripts/seeds/001_seeds_cards.sql) para contemplar carga inicial completa em todas as tabelas do modelo de dados (`tbl_types`, `tbl_stages`, `tbl_collections` e `tbl_cards`).
+- **Resiliência e Idempotência:** Utilização de cláusulas `ON CONFLICT (name) DO NOTHING` e sub-consultas `WHERE NOT EXISTS` para evitar duplicações em coleções e domínios.
+- **Vínculo Relacional Dinâmico:** Inserções da tabela principal `tbl_cards` configuradas via `SELECT` interno dinâmico para resolução de chaves estrangeiras (`collection_id`, `type_id`, `stage_id`).
+- **Massa de Dados Diversificada:** Inclusão de 7 coleções icônicas (*Base Set*, *Jungle*, *Fossil*, *Team Rocket*, *Neo Genesis*, *Evolving Skies*, *151 Scarlet & Violet*) e cartas clássicas e modernas cobrindo múltiplos tipos e estágios (Charizard, Blastoise, Venusaur, Pikachu, Mewtwo, Machamp, Gyarados, Alakazam, Snorlax, Jolteon, Vaporeon, Flareon, Gengar, Dragonite, Zapdos, Dark Charizard, Dark Raichu, Lugia, Typhlosion, Rayquaza VMAX, Umbreon VMAX, Charizard ex, Alakazam ex).
+
