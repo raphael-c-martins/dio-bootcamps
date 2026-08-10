@@ -18,6 +18,22 @@
 
 ---
 
+## 🚀 [2026-08-10] - Refatoração do DDL, Organização Estrutural e Carga em Lote de Cartas
+
+### 📌 Descrição das Alterações
+- **Refatoração DDL e Restrições de Integridade:**
+  - Atualizado o DDL [db_scripts/tables/001_create_card_table.sql](file:///d:/WebApps_Programas_Scripts/dio-bootcamps/bootcamp-bradesco-genai-dados-cyber/desafio03-e-cards/db_scripts/tables/001_create_card_table.sql) adicionando a restrição `UNIQUE` na coluna `collection_set_name` da tabela `tbl_collections`.
+  - Adicionada a restrição de unicidade composta `CONSTRAINT uq_card_collection_number UNIQUE (collection_id, card_number_in_collection)` na tabela `tbl_cards` para impedir registros duplicados de cartas dentro do mesmo set.
+- **Organização Modular de Diretórios:** Movido o script DDL principal para a subpasta `db_scripts/tables/`, padronizando o diretório em `tables/` e `seeds/`.
+- **Carga em Lote de Cartas (50+ Registros Adicionais):**
+  - Renomeado e estruturado o arquivo [db_scripts/seeds/002_bulk_cards-1.sql](file:///d:/WebApps_Programas_Scripts/dio-bootcamps/bootcamp-bradesco-genai-dados-cyber/desafio03-e-cards/db_scripts/seeds/002_bulk_cards-1.sql) (20 cartas).
+  - Criado o arquivo [db_scripts/seeds/003_bulk_cards-2.sql](file:///d:/WebApps_Programas_Scripts/dio-bootcamps/bootcamp-bradesco-genai-dados-cyber/desafio03-e-cards/db_scripts/seeds/003_bulk_cards-2.sql) contendo 30 novos registros de cartas Pokémon (linhas evolutivas Kanto, lendários, VSTAR, ex e VMAX).
+- **Auditoria e Depuração SQL:**
+  - Corrigida a paridade de colunas (12 colunas por tupla) em todas as inserções de `tbl_cards`.
+  - Ajustadas as numerações das cartas `Meganium` (`11/111`) e `Tyranitar` (`31/111`) em `Neo Genesis` para resolver conflitos de chave única.
+
+---
+
 ## 🚀 [2026-08-10] - Carga Inicial Completa de Seeds para Pokémon TCG
 
 ### 📌 Descrição das Alterações

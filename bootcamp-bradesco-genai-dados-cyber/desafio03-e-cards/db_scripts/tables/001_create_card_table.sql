@@ -3,7 +3,7 @@
 -- 1. Tabela de Coleções (Tabela Dominial / Pai)
 CREATE TABLE IF NOT EXISTS tbl_collections (
     id SERIAL PRIMARY KEY,
-    collection_set_name VARCHAR(150) NOT NULL,
+    collection_set_name VARCHAR(150) NOT NULL UNIQUE,
     release_date DATE,
     total_cards_in_collection INT DEFAULT 0,
     created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
@@ -37,6 +37,10 @@ CREATE TABLE IF NOT EXISTS tbl_cards (
     retreat VARCHAR(50),
     card_number_in_collection VARCHAR(20),
     created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+
+    -- Restrição de Unicidade: Evita duplicação do mesmo número de carta na mesma coleção
+    CONSTRAINT uq_card_collection_number
+        UNIQUE (collection_id, card_number_in_collection),
 
     -- Relacionamentos de Chaves Estrangeiras (FKs)
     CONSTRAINT fk_cards_collection

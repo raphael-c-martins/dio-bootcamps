@@ -43,33 +43,15 @@ ON CONFLICT (name) DO NOTHING;
 -- ------------------------------------------------------------------------------
 -- 3. Inserir Coleções (tbl_collections)
 -- ------------------------------------------------------------------------------
-INSERT INTO tbl_collections (collection_set_name, release_date, total_cards_in_collection)
-SELECT 'Base Set', '1999-01-09', 102
-WHERE NOT EXISTS (SELECT 1 FROM tbl_collections WHERE collection_set_name = 'Base Set');
-
-INSERT INTO tbl_collections (collection_set_name, release_date, total_cards_in_collection)
-SELECT 'Jungle', '1999-06-16', 64
-WHERE NOT EXISTS (SELECT 1 FROM tbl_collections WHERE collection_set_name = 'Jungle');
-
-INSERT INTO tbl_collections (collection_set_name, release_date, total_cards_in_collection)
-SELECT 'Fossil', '1999-10-10', 62
-WHERE NOT EXISTS (SELECT 1 FROM tbl_collections WHERE collection_set_name = 'Fossil');
-
-INSERT INTO tbl_collections (collection_set_name, release_date, total_cards_in_collection)
-SELECT 'Team Rocket', '2000-04-24', 83
-WHERE NOT EXISTS (SELECT 1 FROM tbl_collections WHERE collection_set_name = 'Team Rocket');
-
-INSERT INTO tbl_collections (collection_set_name, release_date, total_cards_in_collection)
-SELECT 'Neo Genesis', '2000-12-16', 111
-WHERE NOT EXISTS (SELECT 1 FROM tbl_collections WHERE collection_set_name = 'Neo Genesis');
-
-INSERT INTO tbl_collections (collection_set_name, release_date, total_cards_in_collection)
-SELECT 'Evolving Skies', '2021-08-27', 237
-WHERE NOT EXISTS (SELECT 1 FROM tbl_collections WHERE collection_set_name = 'Evolving Skies');
-
-INSERT INTO tbl_collections (collection_set_name, release_date, total_cards_in_collection)
-SELECT '151 (Scarlet & Violet)', '2023-09-22', 207
-WHERE NOT EXISTS (SELECT 1 FROM tbl_collections WHERE collection_set_name = '151 (Scarlet & Violet)');
+INSERT INTO tbl_collections (collection_set_name, release_date, total_cards_in_collection) VALUES
+    ('Base Set', '1999-01-09', 102),
+    ('Jungle', '1999-06-16', 64),
+    ('Fossil', '1999-10-10', 62),
+    ('Team Rocket', '2000-04-24', 83),
+    ('Neo Genesis', '2000-12-16', 111),
+    ('Evolving Skies', '2021-08-27', 237),
+    ('151 (Scarlet & Violet)', '2023-09-22', 207)
+ON CONFLICT (collection_set_name) DO NOTHING;
 
 -- ------------------------------------------------------------------------------
 -- 4. Inserir Cartas Pokémon (tbl_cards)
