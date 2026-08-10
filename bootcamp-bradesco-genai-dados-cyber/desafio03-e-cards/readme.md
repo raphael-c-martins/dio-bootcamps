@@ -63,10 +63,25 @@ erDiagram
   - Carga complementar com 20 registros adicionais de cartas Pokémon TCG.
 - **Lote 2 de Cartas (Seeds):** [db_scripts/seeds/003_bulk_cards-2.sql](file:///d:/WebApps_Programas_Scripts/dio-bootcamps/bootcamp-bradesco-genai-dados-cyber/desafio03-e-cards/db_scripts/seeds/003_bulk_cards-2.sql)
   - Carga massiva com 30 novos registros de cartas (linhas evolutivas Kanto, lendários, VSTAR, ex e VMAX).
+- **Utilitários de Migração (PowerShell):**
+  - [db_scripts/tables/to_migration.ps1](file:///d:/WebApps_Programas_Scripts/dio-bootcamps/bootcamp-bradesco-genai-dados-cyber/desafio03-e-cards/db_scripts/tables/to_migration.ps1): Consolida todos os DDLs de tabelas em `db_scripts/tables/migration.sql`.
+  - [db_scripts/seeds/to_migration.ps1](file:///d:/WebApps_Programas_Scripts/dio-bootcamps/bootcamp-bradesco-genai-dados-cyber/desafio03-e-cards/db_scripts/seeds/to_migration.ps1): Consolida todos os lotes de seeds em `db_scripts/seeds/migration.sql`.
 
 ---
 
 ## 🚀 Como Executar no PostgreSQL
+
+### Opção 1: Execução por Arquivo Consolidado (Migration)
+
+```bash
+# 1. Executar DDL unificado
+psql -U seu_usuario -d seu_banco -f db_scripts/tables/migration.sql
+
+# 2. Executar Seeds unificadas
+psql -U seu_usuario -d seu_banco -f db_scripts/seeds/migration.sql
+```
+
+### Opção 2: Execução Incremental
 
 1. **Criar as Tabelas:**
    ```bash
@@ -79,3 +94,11 @@ erDiagram
    psql -U seu_usuario -d seu_banco -f db_scripts/seeds/002_bulk_cards-1.sql
    psql -U seu_usuario -d seu_banco -f db_scripts/seeds/003_bulk_cards-2.sql
    ```
+
+### ⚡ Gerar Novas Migrations Consolidadas (PowerShell)
+
+Para gerar/atualizar os arquivos `migration.sql` combinados:
+```powershell
+.\db_scripts\tables\to_migration.ps1
+.\db_scripts\seeds\to_migration.ps1
+```

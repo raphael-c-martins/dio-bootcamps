@@ -18,6 +18,14 @@
 
 ---
 
+## 🚀 [2026-08-10] - Automação de Consolidação de Migrations e Seeds via PowerShell
+
+### 📌 Descrição das Alterações
+- **Automação de Migrations (`to_migration.ps1`):** Criados os scripts PowerShell [db_scripts/tables/to_migration.ps1](file:///d:/WebApps_Programas_Scripts/dio-bootcamps/bootcamp-bradesco-genai-dados-cyber/desafio03-e-cards/db_scripts/tables/to_migration.ps1) e [db_scripts/seeds/to_migration.ps1](file:///d:/WebApps_Programas_Scripts/dio-bootcamps/bootcamp-bradesco-genai-dados-cyber/desafio03-e-cards/db_scripts/seeds/to_migration.ps1) para concatenar automaticamente todos os arquivos `.sql` de cada diretório em arquivos consolidados `migration.sql`.
+- **Compatibilidade PostgreSQL e Otimização:** Refatorados os scripts PowerShell para utilizar codificação UTF-8 nativa, filtrar o arquivo `migration.sql` auto-gerado e remover diretivas T-SQL (`GO`), garantindo execução limpa e compatível com PostgreSQL no pgAdmin / psql.
+
+---
+
 ## 🚀 [2026-08-10] - Refatoração do DDL, Organização Estrutural e Carga em Lote de Cartas
 
 ### 📌 Descrição das Alterações
