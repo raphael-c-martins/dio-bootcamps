@@ -18,6 +18,15 @@
 
 ---
 
+## 🚀 [2026-08-10] - Criação da View Relacional e Consulta Explícita de Cartas
+
+### 📌 Descrição das Alterações
+- **Criação da View Relacional (`vw_cards_details`):** Criado o script DDL [db_scripts/views/001_create_cards_view.sql](file:///d:/WebApps_Programas_Scripts/dio-bootcamps/bootcamp-bradesco-genai-dados-cyber/desafio03-e-cards/db_scripts/views/001_create_cards_view.sql) responsável por mapear todas as informações das cartas (`tbl_cards`), substituindo os IDs numéricos de chaves estrangeiras pelos nomes legíveis das coleções (`tbl_collections.collection_set_name`), tipos (`tbl_types.name`) e estágios (`tbl_stages.name`).
+- **Consulta DML Explícita:** Criado o script [db_scripts/views/002_select_cards_view.sql](file:///d:/WebApps_Programas_Scripts/dio-bootcamps/bootcamp-bradesco-genai-dados-cyber/desafio03-e-cards/db_scripts/views/002_select_cards_view.sql) contendo uma consulta `SELECT` especificando campo por campo (evitando `SELECT *`) sobre a View `vw_cards_details`.
+- **Automação de Migrações de Views:** Criados os scripts [db_scripts/views/to_migration.ps1](file:///d:/WebApps_Programas_Scripts/dio-bootcamps/bootcamp-bradesco-genai-dados-cyber/desafio03-e-cards/db_scripts/views/to_migration.ps1) e [db_scripts/views/migration.sql](file:///d:/WebApps_Programas_Scripts/dio-bootcamps/bootcamp-bradesco-genai-dados-cyber/desafio03-e-cards/db_scripts/views/migration.sql) para consolidação em ordem cronológica dos scripts de view.
+
+---
+
 ## 🚀 [2026-08-10] - Automação de Consolidação de Migrations e Seeds via PowerShell
 
 ### 📌 Descrição das Alterações
