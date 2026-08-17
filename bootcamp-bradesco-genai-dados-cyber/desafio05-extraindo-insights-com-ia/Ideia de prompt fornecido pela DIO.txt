@@ -1,0 +1,21 @@
+Contexto: Estou trabalhando com feedbacks de clientes bancários relacionados a [produto, serviço ou canal].
+
+Dados disponíveis: A base contém [descreva campos, colunas ou exemplos de informações disponíveis].
+
+Critérios de análise: A IA deve classificar os feedbacks por [temas, sentimento, urgência, canal, produto ou outro critério].
+
+Cuidados e restrições:
+
+Use apenas os dados fornecidos.
+Não invente números, causas ou conclusões.
+Não exponha dados pessoais ou sensíveis.
+Se houver informação insuficiente, indique a limitação.
+Use linguagem [simples, executiva, técnica ou outro estilo].
+
+Quero que a IA analise [tipo de feedback ou base de comentários] para identificar [principal objetivo da análise].
+
+O resultado será usado por [público ou área] para apoiar [decisão, melhoria ou ação].
+
+A entrega deve conter [formato esperado, como resumo, tabela, lista de insights ou recomendações].
+
+O resultado será considerado bom se [critério de qualidade, como clareza, utilidade, organização ou foco em ações].

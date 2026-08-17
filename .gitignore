@@ -1,0 +1,45 @@
+# ==========================
+# Credenciais e Variáveis de Ambiente
+# ==========================
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+*.cert
+
+# ==========================
+# Logs e Diagnósticos
+# ==========================
+*.log
+/logs/
+
+# ==========================
+# Artefatos Locais e Rascunhos
+# ==========================
+TEMPORARIO/
+
+# ==========================
+# IDEs e Editores
+# ==========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ==========================
+# Sistema Operacional
+# ==========================
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# ==========================
+# Dependências (Node/Python)
+# ==========================
+node_modules/
+__pycache__/
+*.pyc
+venv/
+.venv/
