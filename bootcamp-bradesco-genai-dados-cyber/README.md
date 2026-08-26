@@ -17,6 +17,7 @@ Abaixo está a relação de desafios desenvolvidos nesta trilha:
 | **[Desafio 05](./desafio05-extraindo-insights-com-ia/)** | Extraindo Insights de Cibersegurança com IA | Engenharia de Prompt, Cibersegurança Bancária |
 | **[Desafio 06](./desafio06-primeiro-programa-python/)** | Primeiro Programa em Python | Python 3, Configuração de Ambiente |
 | **[Desafio 07](./desafio07-conhecendo-python/)** | Conhecendo a Linguagem Python | Python 3, Tipos de Dados, I/O, PEP 8, Introspecção |
+| **[Desafio 08](./desafio08-operadores/)** | Operadores em Python | Python 3, Operadores Aritméticos, Comparação, Lógicos, Atribuição, Identidade e Associação |
 
 ---
 
