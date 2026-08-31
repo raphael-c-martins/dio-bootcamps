@@ -18,6 +18,9 @@ Abaixo está a relação de desafios desenvolvidos nesta trilha:
 | **[Desafio 06](./desafio06-primeiro-programa-python/)** | Primeiro Programa em Python | Python 3, Configuração de Ambiente |
 | **[Desafio 07](./desafio07-conhecendo-python/)** | Conhecendo a Linguagem Python | Python 3, Tipos de Dados, I/O, PEP 8, Introspecção |
 | **[Desafio 08](./desafio08-operadores/)** | Operadores em Python | Python 3, Operadores Aritméticos, Comparação, Lógicos, Atribuição, Identidade e Associação |
+| **[Desafio 09](./desafio09-estruturas-condicionais-e-repeticao/)** | Estruturas Condicionais e de Repetição | Python 3, Indentação, if/elif/else, Operador Ternário, for/while, range |
+| **[Desafio 10](./desafio10-Manipulando-Strings-com-Python/)** | Manipulação de Strings com Python | Python 3, Métodos de Strings, Interpolação (f-strings), Fatiamento, Strings Triplas |
+
 
 ---
 
