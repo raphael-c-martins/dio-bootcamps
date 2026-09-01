@@ -20,7 +20,9 @@ Abaixo está a relação de desafios desenvolvidos nesta trilha:
 | **[Desafio 08](./desafio08-operadores/)** | Operadores em Python | Python 3, Operadores Aritméticos, Comparação, Lógicos, Atribuição, Identidade e Associação |
 | **[Desafio 09](./desafio09-estruturas-condicionais-e-repeticao/)** | Estruturas Condicionais e de Repetição | Python 3, Indentação, if/elif/else, Operador Ternário, for/while, range |
 | **[Desafio 10](./desafio10-Manipulando-Strings-com-Python/)** | Manipulação de Strings com Python | Python 3, Métodos de Strings, Interpolação (f-strings), Fatiamento, Strings Triplas |
-
+| **[Desafio 11](./desafio11-%20Fundamentos-de-Programação-com-Python/)** | Fundamentos de Programação com Python | Resolução de Desafios de Código (Análise de Ações e Padronização de Destinatários) |
+| **[Desafio 12](./desafio12-trabalhando-com-listas-em-python/)** | Trabalhando com Listas em Python | Estruturas de Dados, Matrizes, List Comprehensions e Métodos da Classe `list` |
+| **[Trilha Python DIO](./trilha-python-dio/)** | Material Base e Projetos da Trilha Python | Módulos de Fundamentos, Estrutura de Dados, POO, APIs (FastAPI, Flask, Django) |
 
 ---
 
@@ -32,6 +34,7 @@ Abaixo está a relação de desafios desenvolvidos nesta trilha:
 - **Controle de Versão:** Git, GitHub
 
 ---
+
 <div align="center">
   Trilha realizada com dedicação no Bootcamp Bradesco — DIO.me 🚀
 </div>
