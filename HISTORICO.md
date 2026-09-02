@@ -11,6 +11,41 @@
 
 ---
 
+## 🚀 [2026-09-02] — Módulo Estruturas em Python: Coleções (Tuplas, Conjuntos e Dicionários)
+
+**Resumo:** Reorganização dos cursos do módulo em diretório unificado e implementação prática aprofundada cobrindo Tuplas, Conjuntos (Sets) e Dicionários (Dicts), incluindo métodos nativos, estruturas aninhadas e operadores de pertinência. Criação dos arquivos base para o módulo de Funções em Python.
+
+### O que foi feito
+
+- **Reorganização Estrutural do Módulo:**
+  - Criação da pasta unificada `Estruturas em Python - Dados, Coleções e Funções/` agrupando todos os tópicos da formação.
+  - Migração do conteúdo de listas para a subpasta `Trabalhando com Listas em Python/`.
+
+- **Conhecendo Tuplas em Python (`Tuplas.py`):**
+  - Definição de tuplas com sintaxe de parênteses e vírgula trailing para tuplas unielementares `("Brasil",)`.
+  - Conversões usando `tuple()` a partir de strings e listas.
+  - Acesso indexado (direto e reverso), fatiamento (*slicing*) e métodos embutidos da classe `tuple`: `.count()`, `.index()` e função `len()`.
+
+- **Explorando Conjuntos em Python (`Conjuntos.py`):**
+  - Criação de conjuntos para eliminação de duplicatas e operações matemáticas da Teoria dos Conjuntos.
+  - Métodos de relação entre conjuntos: `.union()`, `.intersection()`, `.difference()`, `.symmetric_difference()`, `.issubset()`, `.issuperset()` e `.isdisjoint()`.
+  - Métodos de manipulação e consulta: `.add()`, `.clear()`, `.copy()`, `.discard()`, `.pop()`, `.remove()`, `len()` e verificação de pertinência com `in`.
+
+- **Dicionários — Criação e Acesso aos Dados (`Criação-e-acesso.py` e `Dict.py`):**
+  - Criação via literal `{}` e construtor `dict()`.
+  - Adição, leitura e alteração dinâmica de pares chave-valor.
+  - Criação de dicionários aninhados para modelagem de estruturas compostas.
+  - Iteração simples sobre as chaves com laço `for`.
+  - Implementação de métodos da classe `dict`: `.clear()`, `.copy()`, `.fromkeys()`, `.get()` (com tratamento de chaves inexistentes e fallback), `.items()`, `.keys()`, `.pop()`, `.popitem()`, `.setdefault()`, `.update()`, `.values()` e operador de pertinência `in`.
+
+- **Dominando Funções em Python (`parte1.py` e `parte2.py`):**
+  - Inicialização dos arquivos de estudo para conclusão das aulas e desafios de funções no próximo ciclo.
+
+- **Atualização dos Manuais:**
+  - Atualização do `README.md` do Bootcamp Bradesco refletindo a nova organização dos módulos de coleções e estruturas de dados.
+
+---
+
 ## 🚀 [2026-09-01] — Módulos 11, 12 e Integração da Trilha Python no Bootcamp Bradesco
 
 **Resumo:** Conclusão dos desafios práticos de algoritmos em Python (Módulo 11) e domínio completo de estruturas de dados do tipo Lista, matrizes multidimensionais e métodos nativos (Módulo 12), além da integração da base de código da Trilha Python da DIO.

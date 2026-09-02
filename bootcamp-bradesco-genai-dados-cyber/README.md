@@ -21,7 +21,7 @@ Abaixo está a relação de desafios desenvolvidos nesta trilha:
 | **[Desafio 09](./desafio09-estruturas-condicionais-e-repeticao/)** | Estruturas Condicionais e de Repetição | Python 3, Indentação, if/elif/else, Operador Ternário, for/while, range |
 | **[Desafio 10](./desafio10-Manipulando-Strings-com-Python/)** | Manipulação de Strings com Python | Python 3, Métodos de Strings, Interpolação (f-strings), Fatiamento, Strings Triplas |
 | **[Desafio 11](./desafio11-%20Fundamentos-de-Programação-com-Python/)** | Fundamentos de Programação com Python | Resolução de Desafios de Código (Análise de Ações e Padronização de Destinatários) |
-| **[Desafio 12](./desafio12-trabalhando-com-listas-em-python/)** | Trabalhando com Listas em Python | Estruturas de Dados, Matrizes, List Comprehensions e Métodos da Classe `list` |
+| **[Estruturas em Python](./Estruturas%20em%20Python%20-%20Dados%2C%20Cole%C3%A7%C3%B5es%20e%20Fun%C3%A7%C3%B5es/)** | Estruturas em Python: Dados, Coleções e Funções | Listas, Tuplas, Conjuntos (Sets), Dicionários (Dicts) e Funções |
 | **[Trilha Python DIO](./trilha-python-dio/)** | Material Base e Projetos da Trilha Python | Módulos de Fundamentos, Estrutura de Dados, POO, APIs (FastAPI, Flask, Django) |
 
 ---
