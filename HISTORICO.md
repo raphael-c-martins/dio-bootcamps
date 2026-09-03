@@ -11,6 +11,31 @@
 
 ---
 
+## 🚀 [2026-09-03] — Conclusão do Módulo de Funções e Desafios de Código em Python
+
+**Resumo:** Finalização completa do curso "Dominando Funções em Python" (partes 1 e 2) e resolução dos dois desafios práticos de código ("Manipulação de Coleções e Funções em Python"), concluindo com êxito todo o módulo de Estruturas em Python.
+
+### O que foi feito
+
+- **Dominando Funções em Python — Parte 1 (`parte1.py`):**
+  - Definição básica de funções com `def` e parâmetros com valor padrão (*default*).
+  - Funções com retornos múltiplos (tuplas) e comportamento de funções sem retorno explícito (`None`).
+  - Argumentos nomeados (*keyword arguments*) e desempacotamento de dicionários com `**kwargs`.
+  - Tratamento de parâmetros variáveis com `*args` (tupla de argumentos posicionais) e `**kwargs` (dicionário de argumentos nomeados) com exemplo de formatação de texto e metadados.
+
+- **Dominando Funções em Python — Parte 2 (`parte2.py`):**
+  - **Parâmetros Especiais — Positional Only (`/`):** Restrição para que parâmetros antes da barra sejam passados exclusivamente por posição.
+  - **Parâmetros Especiais — Keyword Only (`*`):** Restrição para que parâmetros após o asterisco sejam passados obrigatoriamente de forma nomeada.
+  - **Parâmetros Especiais — Híbridos (`/` e `*`):** Combinação de parâmetros posicionais obrigatórios e nomeados obrigatórios.
+  - **Objetos de Primeira Classe:** Tratamento de funções como valores de primeira classe, passando-as como argumentos para outras funções (`exibir_resultado` recebendo `somar` e `subtrair`).
+  - **Escopos em Python:** Diferenciação entre escopo global e local, e aplicação da palavra-chave `global` para manipulação de variáveis globais dentro do escopo de função.
+
+- **Desafios Práticos de Código:**
+  - **Desafio 01 — Calculando Saldo Diário de Lançamentos Bancários (`Desafio01.py`):** Processamento de lançamentos financeiros (`R` para receita e `D` para despesa) a partir de entrada de texto, cálculo do saldo final do dia e formatação com duas casas decimais.
+  - **Desafio 02 — Removendo Duplicatas de Transações no Extrato (`Desafio02.py`):** Filtragem de identificadores duplicados mantendo estritamente a ordem de primeira ocorrência com laço e verificação `not in`.
+
+---
+
 ## 🚀 [2026-09-02] — Módulo Estruturas em Python: Coleções (Tuplas, Conjuntos e Dicionários)
 
 **Resumo:** Reorganização dos cursos do módulo em diretório unificado e implementação prática aprofundada cobrindo Tuplas, Conjuntos (Sets) e Dicionários (Dicts), incluindo métodos nativos, estruturas aninhadas e operadores de pertinência. Criação dos arquivos base para o módulo de Funções em Python.
