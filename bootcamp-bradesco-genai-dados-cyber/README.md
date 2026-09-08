@@ -22,6 +22,7 @@ Abaixo está a relação de desafios desenvolvidos nesta trilha:
 | **[Desafio 10](./desafio10-Manipulando-Strings-com-Python/)** | Manipulação de Strings com Python | Python 3, Métodos de Strings, Interpolação (f-strings), Fatiamento, Strings Triplas |
 | **[Desafio 11](./desafio11-%20Fundamentos-de-Programação-com-Python/)** | Fundamentos de Programação com Python | Resolução de Desafios de Código (Análise de Ações e Padronização de Destinatários) |
 | **[Estruturas em Python](./Estruturas%20em%20Python%20-%20Dados%2C%20Cole%C3%A7%C3%B5es%20e%20Fun%C3%A7%C3%B5es/)** | Estruturas em Python: Dados, Coleções e Funções | Listas, Tuplas, Conjuntos (Sets), Dicionários (Dicts), Funções e Desafios de Código |
+| **[Trabalhando com Arquivos e Dados Externos em Python](./Trabalhando%20com%20Arquivos%20e%20Dados%20Externos%20em%20Python/)** | Trabalhando com Arquivos e Dados Externos em Python | I/O em TXT, CSV, JSON, Integração HTTP REST com Requests (ViaCEP, JSONPlaceholder) e SQLite3 |
 | **[Trilha Python DIO](./trilha-python-dio/)** | Material Base e Projetos da Trilha Python | Módulos de Fundamentos, Estrutura de Dados, POO, APIs (FastAPI, Flask, Django) |
 
 ---
@@ -29,7 +30,7 @@ Abaixo está a relação de desafios desenvolvidos nesta trilha:
 ## 🛠️ Tecnologias e Ferramentas
 
 - **Linguagens & Scripts:** Python 3.x, SQL, PowerShell
-- **Análise & Dados:** Microsoft Excel, Power Query, Modelagem Relacional
+- **Análise & Dados:** Microsoft Excel, Power Query, Modelagem Relacional, SQLite3, JSON, CSV
 - **Inteligência Artificial:** IA Generativa, NotebookLM, Engenharia de Prompt
 - **Controle de Versão:** Git, GitHub
 

@@ -11,6 +11,41 @@
 
 ---
 
+## 🚀 [2026-09-08] — Módulo Trabalhando com Arquivos e Dados Externos em Python
+
+**Resumo:** Implementação prática completa de persistência e manipulação de arquivos locais (TXT, CSV e JSON), integração com serviços web via APIs REST (ViaCEP e JSONPlaceholder utilizando `requests`) e persistência relacional com SQLite3 (DDL, DML, DQL e controle transacional).
+
+### O que foi feito
+
+- **Manipulação de Arquivos de Texto (`leitura-e-escrita-em-TXT.py`):**
+  - Criação e escrita com `write()`.
+  - Manipulação de modos de arquivo: escrita (`w`), leitura (`r`) e acréscimo (`a`).
+  - Técnicas de leitura total com `read()` e iterador com `for linha in arquivo:` combinado com `.strip()` para tratamento de quebras de linha.
+  - Formatação e enriquecimento incremental do arquivo `relatorio.txt`.
+
+- **Manipulação Estruturada de CSV e JSON (`leitura-e-escrita-em-CSV-e-JSON.py`):**
+  - Utilização do módulo nativo `csv`: criação de matriz de vendas, cabeçalhos, escrita em lote com `writerows()` e leitura com `csv.reader()`.
+  - Utilização do módulo nativo `json`: serialização de listas e dicionários com `json.dump()` e desserialização direta para objetos Python com `json.load()`.
+  - Exportação e organização dos artefatos no diretório de saídas `Arquivos criados (txt, csv e json)/`.
+
+- **Integração com APIs HTTP REST (`integracao-com-API.py`):**
+  - Consumo de endpoints externos utilizando a biblioteca `requests`.
+  - Integração com a API ViaCEP (`https://viacep.com.br/ws/01001000/json/`), com validação do status HTTP 200, detecção de erros de negócio (`erro` no payload JSON) e extração de propriedades (`bairro`, `localidade`, `estado`).
+  - Consulta e iteração na coleção de posts da API JSONPlaceholder (`https://jsonplaceholder.typicode.com/posts`).
+
+- **Banco de Dados Relacional com SQLite3 (`integracao-com-BANCO-DE-DADOS.py`):**
+  - Instanciação de banco de dados relacional local (`database.db`) com a biblioteca nativa `sqlite3`.
+  - Definição estrutural DDL com criação condicional da tabela `usuarios` (`CREATE TABLE IF NOT EXISTS`) com restrições (`PRIMARY KEY AUTOINCREMENT`, `NOT NULL`, `UNIQUE`).
+  - Operação DML com inserção de registro e efetivação de transação com `conexao.commit()`.
+  - Consulta DQL com `SELECT *` e iteração do cursor de resultados.
+  - Fechamento controlado da conexão (`conexao.close()`).
+
+- **Governança e Documentação:**
+  - Atualização do `.gitignore` para exclusão de arquivos de banco de dados (`*.db`, `*.sqlite`, `*.sqlite3`).
+  - Elaboração do manual técnico `README.md` dedicado ao módulo e atualização do índice do Bootcamp Bradesco.
+
+---
+
 ## 🚀 [2026-09-03] — Conclusão do Módulo de Funções e Desafios de Código em Python
 
 **Resumo:** Finalização completa do curso "Dominando Funções em Python" (partes 1 e 2) e resolução dos dois desafios práticos de código ("Manipulação de Coleções e Funções em Python"), concluindo com êxito todo o módulo de Estruturas em Python.

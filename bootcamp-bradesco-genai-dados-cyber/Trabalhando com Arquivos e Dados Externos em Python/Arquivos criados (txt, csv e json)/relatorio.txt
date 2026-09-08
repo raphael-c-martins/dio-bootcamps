@@ -1,0 +1,7 @@
+Relatório de Vendas
+=-=--=--=--=--=--=--=--=--=-=
+Produto A: R$ 100,00
+Produto B: R$ 200,00
+Produto C: R$ 300,00
+Produto D: R$ 400,00
+Produto E: R$ 500,00

@@ -1,0 +1,2 @@
+Python é uma linguagem poderosa. 
+Facilita a automação de tarefas.

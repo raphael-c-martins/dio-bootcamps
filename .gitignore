@@ -43,3 +43,11 @@ __pycache__/
 *.pyc
 venv/
 .venv/
+
+# ==========================
+# Bases de Dados Locais
+# ==========================
+*.db
+*.sqlite
+*.sqlite3
+
