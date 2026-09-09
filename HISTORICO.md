@@ -11,6 +11,46 @@
 
 ---
 
+## 🚀 [2026-09-09] — Módulos de Tratamento de Exceções, Depuração e Bibliotecas de Análise de Dados (NumPy, Pandas e Matplotlib)
+
+**Resumo:** Conclusão prática aprofundada dos módulos de "Tratamento de Exceções e Depuração de Código em Python" e "Bibliotecas Essenciais de Python para Análise de Dados", abordando arquitetura defensiva de software, observabilidade com logs, rastreamento de pilha (stack trace), estruturas matriciais, sumarização descritiva e visualização gráfica com subplots.
+
+### O que foi feito
+
+- **Tratamento de Exceções e Depuração de Código em Python:**
+  - **Catálogo e Prevenção de Erros (`excecao-e-depuracao.py`):**
+    - Mapeamento analítico e reprodução fiel dos tracebacks do depurador do VS Code / Python 3.11 para 14 tipos de erros: `SyntaxError`, `IndentationError`, `TypeError`, `ValueError`, `ZeroDivisionError`, `NameError`, `FileNotFoundError`, `IndexError`, `KeyError`, `AttributeError`, `RuntimeError`, `RecursionError`, `ModuleNotFoundError` e `Logic Error`.
+    - Implementação de blocos reais e executáveis de tratamento defensivo em cada seção usando `try...except`, valores seguros de fallback, métodos defensivos (`dict.get()`, cópia de chaves com `list(keys)`) e casos base para prevenção de estouro de pilha.
+  - **Fluxo Estruturado de Exceções (`try-except-e-excecoes-personalizadas.py`):**
+    - Tratamento estruturado com blocos `try`, `except` e `finally` para garantia de execução e liberação de recursos.
+  - **Técnicas de Depuração e Inspeção (`ferramentas-e-tecnicas-de-depuracao.py`):**
+    - Lançamento explícito de exceções personalizadas com a cláusula `raise ValueError(...)`.
+    - Análise de pilha de execução (*Stack Trace / Traceback*) com chamadas encadeadas em profundidade (`funcao_a` -> `funcao_b` -> `funcao_c`) e interceptação de erros de validação.
+  - **Observabilidade e Registro de Logs (`registro-de-logs.py`):**
+    - Configuração centralizada do módulo nativo `logging` com formatação temporal e níveis de severidade (DEBUG, INFO, WARNING, ERROR, CRITICAL).
+    - Registro de auditoria contextual em operações de risco dentro de blocos de tratamento.
+
+- **Bibliotecas Essenciais de Python para Análise de Dados:**
+  - **Fundamentos do Ecossistema Científico (`NumPy-Pandas-Matplotlib.py`):**
+    - Importação canônica e apelidação padrão de mercado (`numpy as np`, `pandas as pd`, `matplotlib.pyplot as plt`).
+    - Operações de álgebra linear e cálculos numéricos vetorizados (`np.array`, `np.sqrt`, `np.sum`).
+    - Criação de DataFrames estruturados a partir de mapeamentos de dicionários.
+  - **Manipulação de Dados e Visualização Avançada (`manipulacao-de-dados.py`):**
+    - Engenharia de visualização com matriz de *subplots* (grade 2x3) no Matplotlib, consolidando 6 tipos de gráficos em uma única janela (Linha, Dispersão/Scatter, Barras, Histograma, Boxplot e Área preenchida com `fill_between`).
+    - Operações com matrizes multidimensionais no NumPy (vetores 1D, matrizes 2D e aritmética de *broadcasting*).
+    - Inspeção estatística e estrutural de DataFrames via `.head()`, `.tail()`, `.info()` e `.describe()`.
+    - Exportação e persistência tabular em múltiplos formatos com `.to_csv()`, `.to_excel()` e `.to_json()`.
+    - Análise descritiva univariada e multivariada com `.mean()`, `.count()` e `.describe(include='all')`.
+  - **Agregações e Gráficos de Negócio (`manipulacao-de-dados-parte2.py`):**
+    - Agrupamento de dados com `.groupby("produto")["preco"].mean()` para cálculos agregados de métricas de vendas/peças de PC.
+    - Renderização direta de gráficos a partir do Pandas (`media_por_produto.plot(kind="line")` e `kind="bar"`).
+    - Estudo comparativo e documentação dos tipos de gráficos disponíveis no Matplotlib/Pandas (barras verticais/horizontais, linhas, histogramas, dispersão, pizza e áreas).
+  - **Organização de Artefatos:**
+    - Isolamento de planilhas e saídas de dados no subdiretório `Arquivos criados/`.
+    - Documentação e cadernos interativos Jupyter armazenados em pastas `README/`.
+
+---
+
 ## 🚀 [2026-09-08] — Módulo Trabalhando com Arquivos e Dados Externos em Python
 
 **Resumo:** Implementação prática completa de persistência e manipulação de arquivos locais (TXT, CSV e JSON), integração com serviços web via APIs REST (ViaCEP e JSONPlaceholder utilizando `requests`) e persistência relacional com SQLite3 (DDL, DML, DQL e controle transacional).

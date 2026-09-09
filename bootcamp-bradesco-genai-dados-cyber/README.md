@@ -23,6 +23,8 @@ Abaixo está a relação de desafios desenvolvidos nesta trilha:
 | **[Desafio 11](./desafio11-%20Fundamentos-de-Programação-com-Python/)** | Fundamentos de Programação com Python | Resolução de Desafios de Código (Análise de Ações e Padronização de Destinatários) |
 | **[Estruturas em Python](./Estruturas%20em%20Python%20-%20Dados%2C%20Cole%C3%A7%C3%B5es%20e%20Fun%C3%A7%C3%B5es/)** | Estruturas em Python: Dados, Coleções e Funções | Listas, Tuplas, Conjuntos (Sets), Dicionários (Dicts), Funções e Desafios de Código |
 | **[Trabalhando com Arquivos e Dados Externos em Python](./Trabalhando%20com%20Arquivos%20e%20Dados%20Externos%20em%20Python/)** | Trabalhando com Arquivos e Dados Externos em Python | I/O em TXT, CSV, JSON, Integração HTTP REST com Requests (ViaCEP, JSONPlaceholder) e SQLite3 |
+| **[Tratamento de Exceções e Depuração de Código em Python](./Tratamento%20de%20Exce%C3%A7%C3%B5es%20e%20Depura%C3%A7%C3%A3o%20de%20C%C3%B3digo%20em%20Python/)** | Tratamento de Exceções e Depuração de Código em Python | Catálogo de Exceções, Blocos try/except/finally, raise, Stack Trace e Logging |
+| **[Bibliotecas Essenciais de Python para Análise de Dados](./Bibliotecas%20Essenciais%20de%20Python%20para%20An%C3%A1lise%20de%20Dados/)** | Bibliotecas Essenciais de Python para Análise de Dados | Arrays NumPy, Manipulação de DataFrames com Pandas (.describe, .groupby) e Gráficos com Matplotlib |
 | **[Trilha Python DIO](./trilha-python-dio/)** | Material Base e Projetos da Trilha Python | Módulos de Fundamentos, Estrutura de Dados, POO, APIs (FastAPI, Flask, Django) |
 
 ---
@@ -30,7 +32,7 @@ Abaixo está a relação de desafios desenvolvidos nesta trilha:
 ## 🛠️ Tecnologias e Ferramentas
 
 - **Linguagens & Scripts:** Python 3.x, SQL, PowerShell
-- **Análise & Dados:** Microsoft Excel, Power Query, Modelagem Relacional, SQLite3, JSON, CSV
+- **Análise & Dados:** NumPy, Pandas, Matplotlib, Microsoft Excel, Power Query, Modelagem Relacional, SQLite3, JSON, CSV
 - **Inteligência Artificial:** IA Generativa, NotebookLM, Engenharia de Prompt
 - **Controle de Versão:** Git, GitHub
 
