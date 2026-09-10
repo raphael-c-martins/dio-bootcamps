@@ -4,28 +4,36 @@ Repositório dedicado aos projetos, desafios práticos e exercícios desenvolvid
 
 ---
 
-## 📂 Desafios e Módulos
+## 📂 Módulos e Desafios da Trilha
 
-Abaixo está a relação de desafios desenvolvidos nesta trilha:
+A estrutura do bootcamp está organizada em módulos numerados, facilitando a navegação sequencial:
 
-| Desafio | Nome / Foco | Tecnologias / Conceitos |
-|---|---|---|
-| **[Desafio 01](./desafio01-notebooklm-automacao-ti/)** | Automação e Gestão de TI com NotebookLM | NotebookLM, IA Generativa, Gestão de TI |
-| **[Desafio 02](./desafio02-introducao-ao-excel/)** | Planilha de Produtividade no Excel | Microsoft Excel, Produtividade, Fórmulas |
-| **[Desafio 03](./desafio03-e-cards/)** | Cartas Pokémon TCG (Modelagem e SQL) | PostgreSQL / MySQL, DDL, DML, Seeds, Views |
-| **[Desafio 04](./desafio04-nintendo-packages-etl/)** | Nintendo Packages ETL | Excel, Power Query, Pipeline ETL |
-| **[Desafio 05](./desafio05-extraindo-insights-com-ia/)** | Extraindo Insights de Cibersegurança com IA | Engenharia de Prompt, Cibersegurança Bancária |
-| **[Desafio 06](./desafio06-primeiro-programa-python/)** | Primeiro Programa em Python | Python 3, Configuração de Ambiente |
-| **[Desafio 07](./desafio07-conhecendo-python/)** | Conhecendo a Linguagem Python | Python 3, Tipos de Dados, I/O, PEP 8, Introspecção |
-| **[Desafio 08](./desafio08-operadores/)** | Operadores em Python | Python 3, Operadores Aritméticos, Comparação, Lógicos, Atribuição, Identidade e Associação |
-| **[Desafio 09](./desafio09-estruturas-condicionais-e-repeticao/)** | Estruturas Condicionais e de Repetição | Python 3, Indentação, if/elif/else, Operador Ternário, for/while, range |
-| **[Desafio 10](./desafio10-Manipulando-Strings-com-Python/)** | Manipulação de Strings com Python | Python 3, Métodos de Strings, Interpolação (f-strings), Fatiamento, Strings Triplas |
-| **[Desafio 11](./desafio11-%20Fundamentos-de-Programação-com-Python/)** | Fundamentos de Programação com Python | Resolução de Desafios de Código (Análise de Ações e Padronização de Destinatários) |
-| **[Estruturas em Python](./Estruturas%20em%20Python%20-%20Dados%2C%20Cole%C3%A7%C3%B5es%20e%20Fun%C3%A7%C3%B5es/)** | Estruturas em Python: Dados, Coleções e Funções | Listas, Tuplas, Conjuntos (Sets), Dicionários (Dicts), Funções e Desafios de Código |
-| **[Trabalhando com Arquivos e Dados Externos em Python](./Trabalhando%20com%20Arquivos%20e%20Dados%20Externos%20em%20Python/)** | Trabalhando com Arquivos e Dados Externos em Python | I/O em TXT, CSV, JSON, Integração HTTP REST com Requests (ViaCEP, JSONPlaceholder) e SQLite3 |
-| **[Tratamento de Exceções e Depuração de Código em Python](./Tratamento%20de%20Exce%C3%A7%C3%B5es%20e%20Depura%C3%A7%C3%A3o%20de%20C%C3%B3digo%20em%20Python/)** | Tratamento de Exceções e Depuração de Código em Python | Catálogo de Exceções, Blocos try/except/finally, raise, Stack Trace e Logging |
-| **[Bibliotecas Essenciais de Python para Análise de Dados](./Bibliotecas%20Essenciais%20de%20Python%20para%20An%C3%A1lise%20de%20Dados/)** | Bibliotecas Essenciais de Python para Análise de Dados | Arrays NumPy, Manipulação de DataFrames com Pandas (.describe, .groupby) e Gráficos com Matplotlib |
-| **[Trilha Python DIO](./trilha-python-dio/)** | Material Base e Projetos da Trilha Python | Módulos de Fundamentos, Estrutura de Dados, POO, APIs (FastAPI, Flask, Django) |
+### 1. [01 - IA Generativa Fundamentos, Prompting e Aplicações](./01%20-%20IA%20Generativa%20Fundamentos%2C%20Prompting%20e%20Aplica%C3%A7%C3%B5es/)
+- **Desafio 01:** [Automação e Gestão de TI com NotebookLM](./01%20-%20IA%20Generativa%20Fundamentos%2C%20Prompting%20e%20Aplica%C3%A7%C3%B5es/desafio01-notebooklm-automacao-ti/) — IA Generativa aplicada à documentação e gestão de infraestrutura.
+- **Desafio 05:** [Extraindo Insights de Cibersegurança com IA](./01%20-%20IA%20Generativa%20Fundamentos%2C%20Prompting%20e%20Aplica%C3%A7%C3%B5es/desafio05-extraindo-insights-com-ia/) — Engenharia de prompt e auditoria de segurança em cenários bancários.
+
+### 2. [02 - Fundamentos de Dados Excel, SQL e Business Intelligence](./02%20-%20Fundamentos%20de%20Dados%20Excel%2C%20SQL%20e%20Business%20Intelligence/)
+- **Desafio 02:** [Planilha de Produtividade no Excel](./02%20-%20Fundamentos%20de%20Dados%20Excel%2C%20SQL%20e%20Business%20Intelligence/desafio02-introducao-ao-excel/) — Modelagem de produtividade, cálculos e fórmulas no Excel.
+- **Desafio 03:** [Cartas Pokémon TCG (Modelagem e SQL)](./02%20-%20Fundamentos%20de%20Dados%20Excel%2C%20SQL%20e%20Business%20Intelligence/desafio03-e-cards/) — Modelagem de banco de dados relacional, DDL, DML, Seeds, Views e Migrations.
+- **Desafio 04:** [Nintendo Packages ETL](./02%20-%20Fundamentos%20de%20Dados%20Excel%2C%20SQL%20e%20Business%20Intelligence/desafio04-nintendo-packages-etl/) — Pipeline de Extração, Transformação e Carga (ETL) no Excel/Power Query.
+
+### 3. [03 - Introdução ao Python Primeiros Passos e Fundamentos](./03%20-%20Introdu%C3%A7%C3%A3o%20ao%20Python%20Primeiros%20Passos%20e%20Fundamentos/)
+- **Desafio 06:** [Primeiro Programa em Python](./03%20-%20Introdu%C3%A7%C3%A3o%20ao%20Python%20Primeiros%20Passos%20e%20Fundamentos/desafio06-primeiro-programa-python/) — Configuração de ambiente e primeiro script.
+- **Desafio 07:** [Conhecendo a Linguagem Python](./03%20-%20Introdu%C3%A7%C3%A3o%20ao%20Python%20Primeiros%20Passos%20e%20Fundamentos/desafio07-conhecendo-python/) — Tipos de dados, I/O interativo e boas práticas PEP 8.
+- **Desafio 08:** [Operadores em Python](./03%20-%20Introdu%C3%A7%C3%A3o%20ao%20Python%20Primeiros%20Passos%20e%20Fundamentos/desafio08-operadores/) — Operadores aritméticos, comparação, lógicos, atribuição, identidade e associação.
+- **Desafio 09:** [Estruturas Condicionais e de Repetição](./03%20-%20Introdu%C3%A7%C3%A3o%20ao%20Python%20Primeiros%20Passos%20e%20Fundamentos/desafio09-estruturas-condicionais-e-repeticao/) — Controle de fluxo (`if/elif/else`), laços (`for/while`), `range` e blocos de indentação.
+- **Desafio 10:** [Manipulação de Strings com Python](./03%20-%20Introdu%C3%A7%C3%A3o%20ao%20Python%20Primeiros%20Passos%20e%20Fundamentos/desafio10-Manipulando-Strings-com-Python/) — Interpolação (f-strings), fatiamento avançado, métodos utilitários e strings de múltiplas linhas.
+- **Desafio 11:** [Fundamentos de Programação com Python](./03%20-%20Introdu%C3%A7%C3%A3o%20ao%20Python%20Primeiros%20Passos%20e%20Fundamentos/desafio11-%20Fundamentos-de-Programa%C3%A7%C3%A3o-com-Python/) — Resolução prática de desafios de código da plataforma DIO.
+
+### 4. [04 - Estruturas em Python - Dados, Coleções e Funções](./04%20-%20Estruturas%20em%20Python%20-%20Dados%2C%20Cole%C3%A7%C3%B5es%20e%20Fun%C3%A7%C3%B5es/)
+- Manipulação aprofundada de coleções nativas: Listas, Tuplas, Conjuntos (*Sets*) e Dicionários (*Dicts*).
+- Funções avançadas (`*args`, `**kwargs`, retornos múltiplos e closures).
+
+### 5. [05 - Análise de Dados com Python Da Preparação à Aplicação com Segurança](./05%20-%20An%C3%A1lise%20de%20Dados%20com%20Python%20Da%20Prepara%C3%A7%C3%A3o%20%C3%A0%20Aplica%C3%A7%C3%A3o%20com%20Seguran%C3%A7a/)
+- **[Bibliotecas Essenciais](./05%20-%20An%C3%A1lise%20de%20Dados%20com%20Python%20Da%20Prepara%C3%A7%C3%A3o%20%C3%A0%20Aplica%C3%A7%C3%A3o%20com%20Seguran%C3%A7a/Bibliotecas%20Essenciais%20de%20Python%20para%20An%C3%A1lise%20de%20Dados/):** Computação científica com NumPy, agregação tabular com Pandas (`.describe()`, `.groupby()`) e visualização com Matplotlib (grade de subplots).
+- **[Processamento e Limpeza de Dados](./05%20-%20An%C3%A1lise%20de%20Dados%20com%20Python%20Da%20Prepara%C3%A7%C3%A3o%20%C3%A0%20Aplica%C3%A7%C3%A3o%20com%20Seguran%C3%A7a/Processamento%20e%20Limpeza%20de%20Dados%20em%20Python/):** Pipeline de tratamento, sanitização de strings, preenchimento de nulos pela média/mediana, análise e normalização Min-Max no dataset do Titanic.
+- **[Trabalhando com Arquivos e Dados Externos](./05%20-%20An%C3%A1lise%20de%20Dados%20com%20Python%20Da%20Prepara%C3%A7%C3%A3o%20%C3%A0%20Aplica%C3%A7%C3%A3o%20com%20Seguran%C3%A7a/Trabalhando%20com%20Arquivos%20e%20Dados%20Externos%20em%20Python/):** Operações de I/O em TXT, CSV e JSON, consumo de APIs HTTP REST (ViaCEP, JSONPlaceholder) e banco SQLite3.
+- **[Tratamento de Exceções e Depuração](./05%20-%20An%C3%A1lise%20de%20Dados%20com%20Python%20Da%20Prepara%C3%A7%C3%A3o%20%C3%A0%20Aplica%C3%A7%C3%A3o%20com%20Seguran%C3%A7a/Tratamento%20de%20Exce%C3%A7%C3%B5es%20e%20Depura%C3%A7%C3%A3o%20de%20C%C3%B3digo%20em%20Python/):** Catálogo analítico de 14 exceções, rastreamento de pilha (*stack trace*), lançamento controlado e logs estruturados.
 
 ---
 

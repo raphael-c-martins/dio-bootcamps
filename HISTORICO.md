@@ -11,6 +11,40 @@
 
 ---
 
+## 🚀 [2026-09-10] — Conclusão do Módulo de Processamento e Limpeza de Dados e Reorganização Estrutural do Bootcamp Bradesco
+
+**Resumo:** Finalização prática completa do submódulo "Processamento e Limpeza de Dados em Python" pertencente ao Módulo 05 e reestruturação arquitetural global de todas as pastas e desafios do Bootcamp Bradesco em 5 módulos sequenciais numerados, otimizando a rastreabilidade pedagógica e a navegação do repositório.
+
+### O que foi feito
+
+- **Processamento e Limpeza de Dados em Python:**
+  - **Pipeline Didático de Tratamento (`processamento-e-limpeza.py`):**
+    - Criação de cenário com dados brutos simulando problemas frequentes em esteiras de dados (valores nulos, espaços em branco residuais, capitalização irregular, registros duplicados, formatações de data mistas e moedas em texto).
+    - Implementação de esteira de higienização com Pandas: eliminação de duplicatas (`drop_duplicates`), sanitização de strings (`str.strip()`, `str.title()`), tratamento de strings monetárias com substituição de caracteres e conversão segura para `float`.
+    - Imputação estatística de valores ausentes pela mediana da coluna, prevenindo distorções provocadas por valores atípicos (*outliers*).
+    - Padronização de datas para o formato `datetime64[ns]` via `pd.to_datetime(format='mixed', dayfirst=True)`.
+    - Reorganização sequencial de índices após exclusão de registros com `.reset_index(drop=True)`.
+  - **Tratamento Avançado no Dataset do Titanic (`tratamentos-no-dataset-do-titanic.py`):**
+    - Ingestão direta dos dados públicos em formato CSV a partir de repositório remoto via `pd.read_csv()`.
+    - Inspeção estrutural e estatística por meio de `.head()`, `.info()` e `.describe()`.
+    - Auditoria de completude com cálculo de nulos por atributo (`df.isnull().sum()`).
+    - Comparativo de abordagens: remoção de instâncias faltantes (`dropna()`) versus preenchimento (*imputation*) da idade pela média amostral (`fillna(df['Age'].mean())`).
+    - Normalização e reescalonamento da variável contínua `Fare` (tarifa) aplicando a transformação Min-Max: `(x - min) / (max - min)`.
+    - Construção de rotinas funcionais de automação (`limpar_dados(df)`) e verificação de integridade tabular (`validar_dataset(df)`).
+    - Caderno interativo de anotações e estudos consolidado na pasta `# README/`.
+
+- **Reorganização Estrutural do Bootcamp Bradesco:**
+  - Agrupamento sistemático de todos os desafios e exercícios anteriores em 5 diretórios modulares numerados:
+    - `01 - IA Generativa Fundamentos, Prompting e Aplicações`: Desafios 01 e 05.
+    - `02 - Fundamentos de Dados Excel, SQL e Business Intelligence`: Desafios 02, 03 e 04.
+    - `03 - Introdução ao Python Primeiros Passos e Fundamentos`: Desafios 06 ao 11.
+    - `04 - Estruturas em Python - Dados, Coleções e Funções`: Trabalhando com Listas, Tuplas, Conjuntos, Dicionários e Funções.
+    - `05 - Análise de Dados com Python Da Preparação à Aplicação com Segurança`: Bibliotecas Essenciais, Processamento e Limpeza, Arquivos/Dados Externos e Tratamento de Exceções.
+  - Atualização completa do arquivo `README.md` do Bootcamp Bradesco com hyperlinks corrigidos e navegação direcionada aos 5 módulos.
+  - Habilitação da configuração `core.longpaths` no Git para garantir a integridade da indexação em caminhos de arquivos profundos no ambiente Windows.
+
+---
+
 ## 🚀 [2026-09-09] — Módulos de Tratamento de Exceções, Depuração e Bibliotecas de Análise de Dados (NumPy, Pandas e Matplotlib)
 
 **Resumo:** Conclusão prática aprofundada dos módulos de "Tratamento de Exceções e Depuração de Código em Python" e "Bibliotecas Essenciais de Python para Análise de Dados", abordando arquitetura defensiva de software, observabilidade com logs, rastreamento de pilha (stack trace), estruturas matriciais, sumarização descritiva e visualização gráfica com subplots.
