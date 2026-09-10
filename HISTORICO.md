@@ -11,6 +11,30 @@
 
 ---
 
+## 🚀 [2026-09-10] — Módulo de Automação de Processos, Integrações e Pipelines ETL com Python
+
+**Resumo:** Implementação prática completa do submódulo "Automação de Processos e Análises com Python", cobrindo automação de rotinas de leitura/escrita, integração com APIs públicas REST, persistência em CSV e banco de dados relacional SQLite3, monitoramento por logs em UTF-8, fundamentos de agendamento de tarefas (Cron/Task Scheduler) e construção de pipelines ETL automatizados com Pandas.
+
+### O que foi feito
+
+- **Automação de Processos e Integrações (`criando-script-basico.py`):**
+  - **Manipulação de Arquivos e Totalização:** Processamento em lote de valores a partir de arquivo de texto local (`vendas.txt`) com iteração linha a linha e cálculo acumulado.
+  - **Integração com API REST:** Consumo de endpoint HTTP público (`api.agify.io`) utilizando a biblioteca `requests` e desserialização direta do payload JSON.
+  - **Persistência Tabular (CSV):** Exportação estruturada dos dados obtidos da API para `dados_api.csv` via módulo nativo `csv`.
+  - **Persistência Relacional com SQLite3:** Modelagem da tabela `usuarios` com DDL (`CREATE TABLE IF NOT EXISTS`), execução de inserções seguras com queries parametrizadas (`INSERT INTO ... VALUES (?, ?, ?)`) prevenindo injeção de SQL e consulta exploratória com `SELECT *`.
+  - **Observabilidade com Logs:** Configuração do módulo padrão `logging` registrando marcos operacionais (`Script iniciado`, `Script finalizado`) em arquivo persistente `meu_log.log` com codificação UTF-8.
+  - **Agendamento e Temporalidade:** Manipulação de carimbos de data/hora com `datetime` e documentação conceitual de agendadores de tarefas (Cron no Linux, Task Scheduler no Windows e Launchd no macOS).
+  - **Portabilidade de Caminhos com `pathlib`:** Uso de `Path(__file__).resolve().parent` para garantir que todos os artefatos de saída permaneçam restritos ao diretório local da aula, independentemente de onde o script seja acionado.
+
+- **Pipeline Automatizado de Dados (`criando-um-pipeline-automatizado.py`):**
+  - **Arquitetura ETL (Extract, Transform, Load):**
+    - *Extract:* Ingestão automatizada de conjunto de dados remoto (`tips.csv` do Seaborn) diretamente da web via `pd.read_csv()`.
+    - *Transform:* Cálculo agregado da métrica de negócio (`df['tip'].sum()`) e instanciação de novo DataFrame com o resultado consolidado.
+    - *Load:* Geração e exportação limpa do relatório final `relatorio_gorjetas.csv` com supressão do índice numérico (`index=False`).
+  - **Caderno de Exercícios:** Caderno interativo `Automação de Processos e Análises com Python.ipynb` integrado na pasta `# README/`.
+
+---
+
 ## 🚀 [2026-09-10] — Conclusão do Módulo de Processamento e Limpeza de Dados e Reorganização Estrutural do Bootcamp Bradesco
 
 **Resumo:** Finalização prática completa do submódulo "Processamento e Limpeza de Dados em Python" pertencente ao Módulo 05 e reestruturação arquitetural global de todas as pastas e desafios do Bootcamp Bradesco em 5 módulos sequenciais numerados, otimizando a rastreabilidade pedagógica e a navegação do repositório.
