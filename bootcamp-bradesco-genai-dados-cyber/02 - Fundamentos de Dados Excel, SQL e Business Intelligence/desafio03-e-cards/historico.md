@@ -21,16 +21,16 @@
 ## 🚀 [2026-08-10] - Criação da View Relacional e Consulta Explícita de Cartas
 
 ### 📌 Descrição das Alterações
-- **Criação da View Relacional (`vw_cards_details`):** Criado o script DDL [db_scripts/views/001_create_cards_view.sql](file:///d:/WebApps_Programas_Scripts/dio-bootcamps/bootcamp-bradesco-genai-dados-cyber/desafio03-e-cards/db_scripts/views/001_create_cards_view.sql) responsável por mapear todas as informações das cartas (`tbl_cards`), substituindo os IDs numéricos de chaves estrangeiras pelos nomes legíveis das coleções (`tbl_collections.collection_set_name`), tipos (`tbl_types.name`) e estágios (`tbl_stages.name`).
-- **Consulta DML Explícita:** Criado o script [db_scripts/views/002_select_cards_view.sql](file:///d:/WebApps_Programas_Scripts/dio-bootcamps/bootcamp-bradesco-genai-dados-cyber/desafio03-e-cards/db_scripts/views/002_select_cards_view.sql) contendo uma consulta `SELECT` especificando campo por campo (evitando `SELECT *`) sobre a View `vw_cards_details`.
-- **Automação de Migrações de Views:** Criados os scripts [db_scripts/views/to_migration.ps1](file:///d:/WebApps_Programas_Scripts/dio-bootcamps/bootcamp-bradesco-genai-dados-cyber/desafio03-e-cards/db_scripts/views/to_migration.ps1) e [db_scripts/views/migration.sql](file:///d:/WebApps_Programas_Scripts/dio-bootcamps/bootcamp-bradesco-genai-dados-cyber/desafio03-e-cards/db_scripts/views/migration.sql) para consolidação em ordem cronológica dos scripts de view.
+- **Criação da View Relacional (`vw_cards_details`):** Criado o script DDL [db_scripts/views/001_create_cards_view.sql](./db_scripts/views/001_create_cards_view.sql) responsável por mapear todas as informações das cartas (`tbl_cards`), substituindo os IDs numéricos de chaves estrangeiras pelos nomes legíveis das coleções (`tbl_collections.collection_set_name`), tipos (`tbl_types.name`) e estágios (`tbl_stages.name`).
+- **Consulta DML Explícita:** Criado o script [db_scripts/views/002_select_cards_view.sql](./db_scripts/views/002_select_cards_view.sql) contendo uma consulta `SELECT` especificando campo por campo (evitando `SELECT *`) sobre a View `vw_cards_details`.
+- **Automação de Migrações de Views:** Criados os scripts [db_scripts/views/to_migration.ps1](./db_scripts/views/to_migration.ps1) e [db_scripts/views/migration.sql](./db_scripts/views/migration.sql) para consolidação em ordem cronológica dos scripts de view.
 
 ---
 
 ## 🚀 [2026-08-10] - Automação de Consolidação de Migrations e Seeds via PowerShell
 
 ### 📌 Descrição das Alterações
-- **Automação de Migrations (`to_migration.ps1`):** Criados os scripts PowerShell [db_scripts/tables/to_migration.ps1](file:///d:/WebApps_Programas_Scripts/dio-bootcamps/bootcamp-bradesco-genai-dados-cyber/desafio03-e-cards/db_scripts/tables/to_migration.ps1) e [db_scripts/seeds/to_migration.ps1](file:///d:/WebApps_Programas_Scripts/dio-bootcamps/bootcamp-bradesco-genai-dados-cyber/desafio03-e-cards/db_scripts/seeds/to_migration.ps1) para concatenar automaticamente todos os arquivos `.sql` de cada diretório em arquivos consolidados `migration.sql`.
+- **Automação de Migrations (`to_migration.ps1`):** Criados os scripts PowerShell [db_scripts/tables/to_migration.ps1](./db_scripts/tables/to_migration.ps1) e [db_scripts/seeds/to_migration.ps1](./db_scripts/seeds/to_migration.ps1) para concatenar automaticamente todos os arquivos `.sql` de cada diretório em arquivos consolidados `migration.sql`.
 - **Compatibilidade PostgreSQL e Otimização:** Refatorados os scripts PowerShell para utilizar codificação UTF-8 nativa, filtrar o arquivo `migration.sql` auto-gerado e remover diretivas T-SQL (`GO`), garantindo execução limpa e compatível com PostgreSQL no pgAdmin / psql.
 
 ---
@@ -39,12 +39,12 @@
 
 ### 📌 Descrição das Alterações
 - **Refatoração DDL e Restrições de Integridade:**
-  - Atualizado o DDL [db_scripts/tables/001_create_card_table.sql](file:///d:/WebApps_Programas_Scripts/dio-bootcamps/bootcamp-bradesco-genai-dados-cyber/desafio03-e-cards/db_scripts/tables/001_create_card_table.sql) adicionando a restrição `UNIQUE` na coluna `collection_set_name` da tabela `tbl_collections`.
+  - Atualizado o DDL [db_scripts/tables/001_create_card_table.sql](./db_scripts/tables/001_create_card_table.sql) adicionando a restrição `UNIQUE` na coluna `collection_set_name` da tabela `tbl_collections`.
   - Adicionada a restrição de unicidade composta `CONSTRAINT uq_card_collection_number UNIQUE (collection_id, card_number_in_collection)` na tabela `tbl_cards` para impedir registros duplicados de cartas dentro do mesmo set.
 - **Organização Modular de Diretórios:** Movido o script DDL principal para a subpasta `db_scripts/tables/`, padronizando o diretório em `tables/` e `seeds/`.
 - **Carga em Lote de Cartas (50+ Registros Adicionais):**
-  - Renomeado e estruturado o arquivo [db_scripts/seeds/002_bulk_cards-1.sql](file:///d:/WebApps_Programas_Scripts/dio-bootcamps/bootcamp-bradesco-genai-dados-cyber/desafio03-e-cards/db_scripts/seeds/002_bulk_cards-1.sql) (20 cartas).
-  - Criado o arquivo [db_scripts/seeds/003_bulk_cards-2.sql](file:///d:/WebApps_Programas_Scripts/dio-bootcamps/bootcamp-bradesco-genai-dados-cyber/desafio03-e-cards/db_scripts/seeds/003_bulk_cards-2.sql) contendo 30 novos registros de cartas Pokémon (linhas evolutivas Kanto, lendários, VSTAR, ex e VMAX).
+  - Renomeado e estruturado o arquivo [db_scripts/seeds/002_bulk_cards-1.sql](./db_scripts/seeds/002_bulk_cards-1.sql) (20 cartas).
+  - Criado o arquivo [db_scripts/seeds/003_bulk_cards-2.sql](./db_scripts/seeds/003_bulk_cards-2.sql) contendo 30 novos registros de cartas Pokémon (linhas evolutivas Kanto, lendários, VSTAR, ex e VMAX).
 - **Auditoria e Depuração SQL:**
   - Corrigida a paridade de colunas (12 colunas por tupla) em todas as inserções de `tbl_cards`.
   - Ajustadas as numerações das cartas `Meganium` (`11/111`) e `Tyranitar` (`31/111`) em `Neo Genesis` para resolver conflitos de chave única.
@@ -54,9 +54,9 @@
 ## 🚀 [2026-08-10] - Carga Inicial Completa de Seeds para Pokémon TCG
 
 ### 📌 Descrição das Alterações
-- **Expansão de Seeds para Todas as Tabelas:** Atualizado o arquivo [db_scripts/seeds/001_seeds_cards.sql](file:///d:/WebApps_Programas_Scripts/dio-bootcamps/bootcamp-bradesco-genai-dados-cyber/desafio03-e-cards/db_scripts/seeds/001_seeds_cards.sql) para contemplar carga inicial completa em todas as tabelas do modelo de dados (`tbl_types`, `tbl_stages`, `tbl_collections` e `tbl_cards`).
+- **Expansão de Seeds para Todas as Tabelas:** Atualizado o arquivo [db_scripts/seeds/001_seeds_cards.sql](./db_scripts/seeds/001_seeds_cards.sql) para contemplar carga inicial completa em todas as tabelas do modelo de dados (`tbl_types`, `tbl_stages`, `tbl_collections` e `tbl_cards`).
 - **Resiliência e Idempotência:** Utilização de cláusulas `ON CONFLICT (name) DO NOTHING` e sub-consultas `WHERE NOT EXISTS` para evitar duplicações em coleções e domínios.
 - **Vínculo Relacional Dinâmico:** Inserções da tabela principal `tbl_cards` configuradas via `SELECT` interno dinâmico para resolução de chaves estrangeiras (`collection_id`, `type_id`, `stage_id`).
 - **Massa de Dados Diversificada:** Inclusão de 7 coleções icônicas (*Base Set*, *Jungle*, *Fossil*, *Team Rocket*, *Neo Genesis*, *Evolving Skies*, *151 Scarlet & Violet*) e cartas clássicas e modernas cobrindo múltiplos tipos e estágios (Charizard, Blastoise, Venusaur, Pikachu, Mewtwo, Machamp, Gyarados, Alakazam, Snorlax, Jolteon, Vaporeon, Flareon, Gengar, Dragonite, Zapdos, Dark Charizard, Dark Raichu, Lugia, Typhlosion, Rayquaza VMAX, Umbreon VMAX, Charizard ex, Alakazam ex).
-- **Carga Adicional de Cartas (20 Novos Registros):** Criado o script [db_scripts/seeds/002_more_cards.sql](file:///d:/WebApps_Programas_Scripts/dio-bootcamps/bootcamp-bradesco-genai-dados-cyber/desafio03-e-cards/db_scripts/seeds/002_more_cards.sql) contendo 20 novas cartas (Mew, Arcanine, Haunter, Raichu, Ninetales, Lapras, Aerodactyl, Moltres, Scizor, Kingdra, Dark Blastoise, Dark Dragonite, Sylveon VMAX, Gengar VMAX, Gardevoir ex, Venusaur ex, Blastoise ex, Kangaskhan, Pinsir, Dragonair) com sub-consultas para integridade referencial.
+- **Carga Adicional de Cartas (20 Novos Registros):** Criado o script [db_scripts/seeds/002_more_cards.sql](./db_scripts/seeds/002_more_cards.sql) contendo 20 novas cartas (Mew, Arcanine, Haunter, Raichu, Ninetales, Lapras, Aerodactyl, Moltres, Scizor, Kingdra, Dark Blastoise, Dark Dragonite, Sylveon VMAX, Gengar VMAX, Gardevoir ex, Venusaur ex, Blastoise ex, Kangaskhan, Pinsir, Dragonair) com sub-consultas para integridade referencial.
 

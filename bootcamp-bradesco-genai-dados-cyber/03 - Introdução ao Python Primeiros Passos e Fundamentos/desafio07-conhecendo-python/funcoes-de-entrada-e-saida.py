@@ -14,7 +14,7 @@ print(nome, sep="#", end="...\n")
 #===========================
 
 #### nome = "Raphael"
-#### sobrenome = "Chernicharo Martins"
+#### sobrenome = "Silva"
 
 #### print(nome, sobrenome)
 #### print(nome, sobrenome, end="...\n")

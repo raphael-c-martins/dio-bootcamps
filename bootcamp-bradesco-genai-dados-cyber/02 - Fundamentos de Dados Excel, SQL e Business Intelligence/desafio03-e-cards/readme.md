@@ -54,22 +54,22 @@ erDiagram
 
 ## 📂 Arquivos de Script
 
-- **DDL da Estrutura:** [db_scripts/tables/001_create_card_table.sql](file:///d:/WebApps_Programas_Scripts/dio-bootcamps/bootcamp-bradesco-genai-dados-cyber/desafio03-e-cards/db_scripts/tables/001_create_card_table.sql)
+- **DDL da Estrutura:** [db_scripts/tables/001_create_card_table.sql](./db_scripts/tables/001_create_card_table.sql)
   - Cria as tabelas `tbl_collections`, `tbl_types`, `tbl_stages` e `tbl_cards` com relacionamentos de Chaves Estrangeiras (`FK`).
   - Inclui restrições de integridade (`UNIQUE` em `collection_set_name` e `uq_card_collection_number`) e índices de alta performance para otimização de consultas.
-- **Seeds Iniciais:** [db_scripts/seeds/001_initial_seed.sql](file:///d:/WebApps_Programas_Scripts/dio-bootcamps/bootcamp-bradesco-genai-dados-cyber/desafio03-e-cards/db_scripts/seeds/001_initial_seed.sql)
+- **Seeds Iniciais:** [db_scripts/seeds/001_initial_seed.sql](./db_scripts/seeds/001_initial_seed.sql)
   - Carga de dados inicial e idempotente para todas as tabelas: 11 tipos de Pokémon, 10 estágios, 7 coleções icônicas e 23 cartas representativas (clássicas e modernas).
-- **Lote 1 de Cartas (Seeds):** [db_scripts/seeds/002_bulk_cards-1.sql](file:///d:/WebApps_Programas_Scripts/dio-bootcamps/bootcamp-bradesco-genai-dados-cyber/desafio03-e-cards/db_scripts/seeds/002_bulk_cards-1.sql)
+- **Lote 1 de Cartas (Seeds):** [db_scripts/seeds/002_bulk_cards-1.sql](./db_scripts/seeds/002_bulk_cards-1.sql)
   - Carga complementar com 20 registros adicionais de cartas Pokémon TCG.
-- **Lote 2 de Cartas (Seeds):** [db_scripts/seeds/003_bulk_cards-2.sql](file:///d:/WebApps_Programas_Scripts/dio-bootcamps/bootcamp-bradesco-genai-dados-cyber/desafio03-e-cards/db_scripts/seeds/003_bulk_cards-2.sql)
+- **Lote 2 de Cartas (Seeds):** [db_scripts/seeds/003_bulk_cards-2.sql](./db_scripts/seeds/003_bulk_cards-2.sql)
   - Carga massiva com 30 novos registros de cartas (linhas evolutivas Kanto, lendários, VSTAR, ex e VMAX).
 - **Views e Consultas Relacionais:**
-  - [db_scripts/views/001_create_cards_view.sql](file:///d:/WebApps_Programas_Scripts/dio-bootcamps/bootcamp-bradesco-genai-dados-cyber/desafio03-e-cards/db_scripts/views/001_create_cards_view.sql): DDL da View `vw_cards_details` relacionando cartas, coleções, tipos e estágios.
-  - [db_scripts/views/002_select_cards_view.sql](file:///d:/WebApps_Programas_Scripts/dio-bootcamps/bootcamp-bradesco-genai-dados-cyber/desafio03-e-cards/db_scripts/views/002_select_cards_view.sql): Consulta DML explícita especificando campo a campo sobre a View.
+  - [db_scripts/views/001_create_cards_view.sql](./db_scripts/views/001_create_cards_view.sql): DDL da View `vw_cards_details` relacionando cartas, coleções, tipos e estágios.
+  - [db_scripts/views/002_select_cards_view.sql](./db_scripts/views/002_select_cards_view.sql): Consulta DML explícita especificando campo a campo sobre a View.
 - **Utilitários de Migração (PowerShell):**
-  - [db_scripts/tables/to_migration.ps1](file:///d:/WebApps_Programas_Scripts/dio-bootcamps/bootcamp-bradesco-genai-dados-cyber/desafio03-e-cards/db_scripts/tables/to_migration.ps1): Consolida todos os DDLs de tabelas em `db_scripts/tables/migration.sql`.
-  - [db_scripts/seeds/to_migration.ps1](file:///d:/WebApps_Programas_Scripts/dio-bootcamps/bootcamp-bradesco-genai-dados-cyber/desafio03-e-cards/db_scripts/seeds/to_migration.ps1): Consolida todos os lotes de seeds em `db_scripts/seeds/migration.sql`.
-  - [db_scripts/views/to_migration.ps1](file:///d:/WebApps_Programas_Scripts/dio-bootcamps/bootcamp-bradesco-genai-dados-cyber/desafio03-e-cards/db_scripts/views/to_migration.ps1): Consolida todas as views e consultas em `db_scripts/views/migration.sql`.
+  - [db_scripts/tables/to_migration.ps1](./db_scripts/tables/to_migration.ps1): Consolida todos os DDLs de tabelas em `db_scripts/tables/migration.sql`.
+  - [db_scripts/seeds/to_migration.ps1](./db_scripts/seeds/to_migration.ps1): Consolida todos os lotes de seeds em `db_scripts/seeds/migration.sql`.
+  - [db_scripts/views/to_migration.ps1](./db_scripts/views/to_migration.ps1): Consolida todas as views e consultas em `db_scripts/views/migration.sql`.
 
 ---
 

@@ -1,6 +1,6 @@
 ### Fatiamento de strings ###
 
-nome = "Raphael Chernicharo Martins"
+nome = "Raphael Silva Costa"
 
 nome[0]
 # "R"
@@ -15,19 +15,19 @@ nome[2:7]
 # "phael"
 
 nome[0:18:3]
-# "RCM"
+# "Rh aot"
 
 nome[:]
-# "Raphael Chernicharo Martins"
+# "Raphael Silva Costa"
 
 nome[-1]
-# "s"
+# "a"
 
 nome[-2]
-# "n"
+# "t"
 
 nome[-3: ]
-# "ns"
+# "sta"
 
 nome[::-1]
-# "snitraM oracinhreC leahpaR"
+# "atsoC avliS leahpaR"
